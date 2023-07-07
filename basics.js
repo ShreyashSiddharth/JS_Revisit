@@ -112,3 +112,22 @@ console.log(myDate.getFullYear());
 console.log(myDate.getDay());
 console.log(myDate.getMinutes());
 console.log(myDate.getHours(),':',myDate.getMinutes());
+
+//DOM Manipulation
+let elem = document.getElementById('btn');
+console.log(elem);
+let elem1  = document.getElementsByClassName('container');
+console.log(elem1);
+// elem1[0].style.background = "yellow";
+elem1[0].classList.add("bg-primary"); // Add classes to elemets
+elem1[0].classList.add("text-col"); // can do remove also
+console.log(elem1[1].innerText);
+console.log(elem1[1].innerHTML);
+tn  = document.getElementsByTagName('div');
+console.log(tn);
+createdElement = document.createElement('p');
+createdElement.innerText = "This is a created para";
+tn[0].appendChild(createdElement)
+createdElement2 = document.createElement('b');
+createdElement2.innerText = "This is a bold paragraph";
+tn[0].replaceChild(createdElement2,createdElement);
