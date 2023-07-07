@@ -54,3 +54,61 @@ console.log(x<= y); // Or use > , < only
 console.log(true && false);
 console.log(true || false);
 console.log(!true);
+
+// functions follow DRY - Dont Repeat Yourself
+function avg(a, b){
+    return (a+b)/2;
+}
+let c = avg(4,5);
+console.log(c);
+//Conditionals in JS 
+if(x> 3){
+    console.log("Hey you are above 3");
+}else if(x>2){
+    console.log("Hey your below 3");
+}
+else{console.log("You are greater than 1");}
+
+//Loops (Same as Cpp)
+let arr1 = [1,2,3,4,5, 6]
+for(let i  = 0  ; i < arr1.length;i++){
+    console.log(arr1[i]);
+}
+arr1.forEach(element => {  // Same as above for loop
+    console.log(element);
+});
+let j = 0 ; 
+while(j< arr1.length){
+    console.log(arr1[j]);
+    j++;
+}
+// Break and continue statements are the same as in  Cpp
+
+//Array methods
+let myArr = ["Fan", 'camera' , 45 , null, true];
+console.log(myArr.length);
+// myArr.pop();
+myArr.push("Mine");
+myArr.shift();
+myArr.unshift("First ME") // Returns new array length after adding first me
+console.log(myArr);
+//arr.sort uses alhabetical sort
+
+//String Methods in JavaScript
+let myLovelyString = "Harry is a good boy good good";
+console.log(myLovelyString.length);
+console.log(myLovelyString.indexOf("good"));
+console.log(myLovelyString.lastIndexOf("good"));
+console.log(myLovelyString.slice(1,4)); // Sliced String
+d = myLovelyString.replace("Harry"  , "Rohan");
+console.log(d);
+
+
+//JS Dates
+let myDate = new Date();
+console.log(myDate);
+console.log(myDate.getTime());
+console.log(myDate.getFullYear());
+console.log(myDate.getDay());
+console.log(myDate.getMinutes());
+console.log(myDate.getHours(),':',myDate.getMinutes());
