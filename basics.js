@@ -156,3 +156,5 @@ firstContainer.addEventListener('click', function(){ // Excecutes when clicked
 
 //Use mouseup Incase of press and Release
 //Use mousedown incase of press and hold
+
+//Remaining from SetTimeOut and Interval
