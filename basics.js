@@ -130,4 +130,29 @@ createdElement.innerText = "This is a created para";
 tn[0].appendChild(createdElement)
 createdElement2 = document.createElement('b');
 createdElement2.innerText = "This is a bold paragraph";
-tn[0].replaceChild(createdElement2,createdElement);
+tn[0].replaceChild(createdElement2,createdElement); // removeChild(element) --> removes element
+// Query Selector Document
+
+sel  = document.querySelector('container');
+console.log(sel);
+sle = document.querySelectorAll('container');
+console.log(sle);
+
+//Events In JavaScript
+window.onload = function(){
+    console.log("Window was loaded");
+}
+firstContainer.addEventListener('click', function(){ // Excecutes when clicked
+    
+    console.log("Click happend");
+    document.querySelectorAll('container')[0].innerHTML = "<b> You clicked</b>";
+})
+// firstContainer.addEventListener('mouseover', function(){  //Excecutes when mouse enters the container
+//     console.log("mouse is here");
+// })
+// firstContainer.addEventListener('mouseout', function(){ // Excecutes when mouse is out of container
+//     console.log("mouse is out");
+// })
+
+//Use mouseup Incase of press and Release
+//Use mousedown incase of press and hold
