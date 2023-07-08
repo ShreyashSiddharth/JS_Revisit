@@ -38,3 +38,10 @@ const arr = ["Pedro" , "jack", "Jessica"];
 const arr2 = [...arr, "Jhon"];
 
 //Remaining from Map , Filter , Reduce
+//.map() , .filter() , .reduce()
+arr.map((name) =>{
+return name+"1"   //Adds 1 to all array elements
+});
+arr.filter((name) =>{
+    return name !== "Pedro1"; // Filters and keeps those names only which arent Pedro1
+});

@@ -145,7 +145,7 @@ window.onload = function(){
 firstContainer.addEventListener('click', function(){ // Excecutes when clicked
     
     console.log("Click happend");
-    document.querySelectorAll('container')[0].innerHTML = "<b> You clicked</b>";
+    document.querySelectorAll('.container')[0].innerHTML = "<b>You clicked</b>";
 })
 // firstContainer.addEventListener('mouseover', function(){  //Excecutes when mouse enters the container
 //     console.log("mouse is here");
@@ -158,3 +158,23 @@ firstContainer.addEventListener('click', function(){ // Excecutes when clicked
 //Use mousedown incase of press and hold
 
 //Remaining from SetTimeOut and Interval
+
+logkaro = () =>{console.log("I am your Log");
+document.querySelectorAll('.container')[0].innerHTML = "<b>Set Timeout Fired</b>";
+}
+// setTimeout(logkaro,2000); fires after 2000 miliseconds
+// setInterval(logkaro,2000); // Fires every 2000 miliseconds
+// clr = setInterval(logkaro,2000); 
+//Pass this clr to clearInterval or clearTimeout to stop
+
+//Local Storage
+obj = {name : 'harry'  , length:1 , a:1};
+jso = JSON.stringify(obj);
+console.log(typeof jso);
+parsed = JSON.parse(jso);
+console.log (typeof parsed);
+
+//Some ES6+ Stuff
+vari = 34
+console.log(`This is a variable ${vari}`); //Use bacticks only
+
